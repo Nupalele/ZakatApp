@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Zakat Calculator</string>
+    <string name="About_text"><a href="https://github.com/Nupalele/ZakatApp.git">Source Code Link</a></string>
+</resources>

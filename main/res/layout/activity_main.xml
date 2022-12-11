@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Weight (g)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textW">
+
+        <RadioButton
+            android:id="@+id/rdK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Keep (85g)"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wear (200g)"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textW"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:ems="10"
+        android:hint="Current Gold Value (g)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Button
+        android:id="@+id/btnTetap"
+        android:layout_width="207dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/btnKira"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="RESET"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <Button
+        android:id="@+id/btnKira"
+        android:layout_width="209dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/textV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="CALCULATE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textW"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <TextView
+        android:id="@+id/total1"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:text="Total Value of Gold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/total2"
+        android:layout_width="317dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/total1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Zakat Payable"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/total3"
+        android:layout_width="318dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/total2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Total Zakat (RM)"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+
+</RelativeLayout>
